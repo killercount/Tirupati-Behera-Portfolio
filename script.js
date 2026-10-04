@@ -1,22 +1,79 @@
 const photos=[
-["Startup Conclave 2025","Event / Editorial - official coverage","01"],["SkatersClub","Community / Event - people, action, lifestyle","02"],
-["Indian Army Projects","Documentary / Visual content - defence projects","03"],["i-Hub Gujarat","Event / Corporate - organizational photography","04"],
-["AAWAZ Short Film","Film / Behind-the-scenes","05"],["Event Photography","Official coverage and storytelling","06"],
-["Portrait Photography","People, character, expression","07"],["Street Photography","Public spaces and candid moments","08"],
-["Lifestyle Photography","Natural movement, everyday stories","09"],["Brand Photography","Visual identity and campaigns","10"],
-["Documentary Photography","Meaningful environments, real stories","11"],["Travel Photography","Places, journeys, atmosphere","12"],
-["Editorial Photography","Directed frames, publication rhythm","13"],["Creative Visual Storytelling","Photography shaped by narrative","14"]];
-const films=[["AAWAZ Short Film","Film / Behind-the-Scenes","19","01"],["Indian Army Projects","Documentary / Visual Content","20","02"],["Startup Conclave 2025","Event / Editorial Coverage","05","03"],["i-Hub Gujarat","Corporate / Organizational Media","12","04"]];
-const boardIds=["03","07","10","11","13","15","16","18"];
+ {title:"Family & Lifestyle",meta:"Studio / family portraiture",src:"assets/images/work/portrait/family-portrait.jpg",gallery:[
+  {title:"Family Portrait",meta:"Studio / family portraiture",src:"assets/images/work/portrait/family-portrait.jpg"},
+  {title:"A Day by the Sea",meta:"Lifestyle / family photography",src:"assets/images/work/portrait/family-by-the-sea.jpg"},
+  {title:"A Family Moment",meta:"Lifestyle / family photography",src:"assets/images/work/portrait/family-moment.jpg"},
+  {title:"Milestone Portrait",meta:"Studio / family portraiture",src:"assets/images/work/portrait/milestone-portrait.jpg"},
+  {title:"A Family Story",meta:"Lifestyle / family photography",src:"assets/images/work/portrait/family-story.jpg"},
+  {title:"Tiny Hands",meta:"Studio / newborn portraiture",src:"assets/images/work/portrait/tiny-hands.jpg"},
+  {title:"Nature & Balloons",meta:"Studio / milestone portraiture",src:"assets/images/work/portrait/nature-balloons.webp"},
+  {title:"Holiday Keepsake",meta:"Studio / seasonal portraiture",src:"assets/images/work/portrait/holiday-moment.webp"},
+  {title:"Playful Portrait",meta:"Studio / family portraiture",src:"assets/images/work/portrait/playful-studio.webp"}
+ ]},
+ {title:"Maternity & Newborn",meta:"Studio / portraiture",src:"assets/images/work/portrait/maternity-story.jpg",gallery:[
+  {title:"Maternity Portrait",meta:"Studio / maternity photography",src:"assets/images/work/portrait/maternity-story.jpg"},
+  {title:"Newborn Portrait",meta:"Studio / newborn photography",src:"assets/images/work/portrait/newborn-story.jpg"}
+ ]},
+ {title:"Portrait & Community",meta:"People / editorial photography",src:"assets/images/work/documentary/people-of-ihub.jpg"},
+ {title:"Startup Conclave 2025",meta:"Event photography / i-Hub Gujarat",src:"assets/images/work/documentary/conclave-inauguration.jpg",gallery:[
+  {title:"Startup Conclave 2025",meta:"Inauguration / i-Hub Gujarat",src:"assets/images/work/documentary/conclave-inauguration.jpg"},
+  {title:"Startup Conclave 2025",meta:"Main stage / i-Hub Gujarat",src:"assets/images/work/documentary/conclave-stage.jpg"},
+  {title:"Startup Conclave 2025",meta:"Exhibition floor / i-Hub Gujarat",src:"assets/images/work/documentary/conclave-session.jpg"}
+ ]}
+];
+const films=[
+ {title:"AAWAZ",meta:"Short film / IFP 2025",src:"assets/videos/short-films/AAWAZ, Short film, (IFP - 2025).mp4",kind:"Short film"},
+ {title:"The Summer, Part 1",meta:"Narrative short film",src:"assets/videos/short-films/The Summer, (Part-1).mp4",kind:"Short film"},
+ {title:"The Summer, Part 2",meta:"Narrative short film",src:"assets/videos/short-films/The Summer (Part-2).mp4",kind:"Short film"},
+ {title:"The Summer, Part 1 / Teaser",meta:"Narrative film teaser",src:"assets/videos/short-films/The Summer (Part-1 Teaser).mp4",kind:"Film teaser"},
+ {title:"The Summer, Part 2 / Teaser",meta:"Narrative film teaser",src:"assets/videos/short-films/The Summer (Part-2 Teaser).mp4",kind:"Film teaser"},
+ {title:"Startup Conclave 2025",meta:"Event reel / i-Hub Gujarat",src:"assets/videos/event-reels/Get ready, innovators! The biggest startup stage in India is here—where bold ideas turn into imp.mp4",kind:"Event reel"},
+ {title:"Samriddhi Acceleration Program",meta:"Event reel / investor panels",src:"assets/videos/event-reels/Day 2 at Samriddhi Acceleration Program - Investor Panels + Real Conversations + Deal-Flow Momen.mp4",kind:"Event reel"},
+ {title:"Every Game-Changing Venture",meta:"Brand film / i-Hub Gujarat",src:"assets/videos/event-reels/Every game-changing venture starts as a single idea. But an idea alone needs more—it needs guida.mp4",kind:"Event film"},
+ {title:"TechExpo 2025 / Preview",meta:"Event promo / i-Hub Gujarat",src:"assets/videos/event-reels/TechExpo 25 is coming!Get ready for innovative ideas, cutting-edge tech, and interactive exhibi.mp4",kind:"Event promo"},
+ {title:"Global Connections",meta:"Visit coverage / i-Hub Gujarat",src:"assets/videos/event-reels/We were delighted to welcome Mr. Minsu Park and Mr. Jiho Seo, Senior Managers from the KNU Globa.mp4",kind:"Event film"},
+ {title:"Built for Innovation",meta:"Infrastructure story / BLAIM 2025",src:"assets/videos/event-reels/“World-class innovation begins with world-class infrastructure.” As part of BLAIM 2025, organize.mp4",kind:"Brand film"},
+ {title:"TechExpo 2025 / Highlights",meta:"Event reel / technology showcase",src:"assets/videos/event-reels/🚀✨ Tech meets innovation at TechExpo 2025! 💡💻 From AI breakthroughs to next-gen drones, our s.mp4",kind:"Event reel"},
+ {title:"A Home Full of Stories",meta:"Studio / family film",src:"assets/videos/studio/family is the safest kind of home..mp4",kind:"Studio film"},
+ {title:"Golden Hour Together",meta:"Couple film / studio",src:"assets/videos/studio/Captured the unforgettable memory of love in the love of yellow sunset 🌇 💛 ..Sweet moments Ca.mp4",kind:"Studio film"},
+ {title:"Flute & Festival",meta:"Lifestyle reel / studio",src:"assets/videos/studio/Flute in hand, smile on face… and the whole world in love with my Kanha. 🎶💛 Sweet momentsCap.mp4",kind:"Lifestyle film"},
+ {title:"One Small Smile",meta:"Family film / studio",src:"assets/videos/studio/One smile = whole heart melted. 🫶.mp4",kind:"Studio film"},
+ {title:"A Promise at Sunset",meta:"Couple film / studio",src:"assets/videos/studio/Through every high and low,I’m grateful to walk this journey with you.Here’s to forever by your.mp4",kind:"Studio film"},
+ {title:"Sunflower Studio",meta:"Newborn setup / behind the scenes",src:"assets/videos/studio/We’re happy to create this setup using real sunflowers 🌻Perfectly suited for a newborn baby.Boo.mp4",kind:"Studio film"},
+ {title:"Milestone in Motion",meta:"Family milestone film / studio",src:"assets/videos/studio/✨ “One whole year of giggles, cuddles, and endless love. Our little princess turns ONE today! 💕.mp4",kind:"Studio film"},
+ {title:"Floral Wedding Invitation",meta:"Motion design / wedding",src:"assets/videos/motion-design/Beige Floral Elegant Wedding Invitation Mobile Video.mp4",kind:"Motion design"},
+ {title:"Traditional Wedding Invitation",meta:"Motion design / wedding",src:"assets/videos/motion-design/Colorful Traditional Indian Wedding Invitation Mobile Video.mp4",kind:"Motion design"},
+ {title:"Floral Celebration Invitation",meta:"Motion design / wedding",src:"assets/videos/motion-design/Red and Green Floral Indian Wedding Invitation Mobile Video.mp4",kind:"Motion design"}
+];
+const designs=[
+ {title:"Startup Conclave 2025",meta:"Event campaign / i-Hub Gujarat",src:"assets/images/design/startup-conclave.jpg",alt:"Startup Conclave 2025 event artwork"},
+ {title:"TattvaX Virtual Session",meta:"Digital event / i-Hub and Sanchi Connect",src:"assets/images/design/tattvax-session.jpg",alt:"TattvaX virtual session speaker poster"},
+ {title:"More Than a Campaign",meta:"Brand campaign / Pramukh",src:"assets/images/design/environment-campaign.jpg",alt:"Pramukh World Environment Day campaign artwork"},
+ {title:"If Clients Were Siblings",meta:"Social campaign / Pramukh",src:"assets/images/design/brand-social-campaign.jpg",alt:"Illustrated Raksha Bandhan social campaign artwork"}
+];
+const boardPhotos=[
+ {title:"Startup Conclave",src:photos[3].gallery[0].src},
+ {title:"Mountain Road",src:"assets/images/hero-upload.jpg"},
+ {title:"Golden Hour Walk",src:"assets/images/meaningful-moments-upload.jpeg"},
+ {title:"Environment Campaign",src:"assets/images/design/environment-campaign.jpg"},
+ {title:"Social Campaign",src:"assets/images/design/brand-social-campaign.jpg"},
+ {title:"A Day by the Sea",src:photos[0].gallery[1].src},
+ {title:"A Family Moment",src:photos[0].gallery[2].src}
+];
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
-const img=n=>`assets/images/photo-${n}.jpg`,fine=matchMedia("(pointer:fine)").matches;
+const asset=path=>encodeURI(path),fine=matchMedia("(pointer:fine)").matches;
 
-$("#index").innerHTML=photos.map(([t,m,n],i)=>`<li class="rv"><a href="${img(n)}" data-img="${img(n)}"><em>${String(i+1).padStart(2,"0")}</em><h3>${t}</h3><p>${m}</p></a></li>`).join("");
-$("#filmStrip").innerHTML=films.map(([t,m,p,v])=>`<button class="film-card rv" type="button" data-src="assets/videos/film-${v}.mp4" data-title="${t}" data-meta="${m}"><img src="${img(p)}" alt="Poster for ${t}" loading="lazy"><span class="film-info"><span class="play" aria-hidden="true">&#9654;</span><strong>${t}</strong><span>${m}</span></span></button>`).join("");
+$("#hero .hero-media img").src=asset("assets/images/hero-upload.jpg");
+$("#about .about-frame img").src=asset("assets/images/meaningful-moments-upload.jpeg");
+$(".contact-bg").src=asset("assets/images/meaningful-moments-upload.jpeg");
+$("#index").innerHTML=photos.map(({title,meta,src},i)=>`<li class="rv"><a href="${asset(src)}" data-img="${asset(src)}"><em>${String(i+1).padStart(2,"0")}</em><h3>${title}</h3><p>${meta}</p></a></li>`).join("");
+const filmPoster=src=>src.replace(/^assets\/videos\//,"assets/images/film-thumbnails/").replace(/\.mp4$/i,".jpg");
+$("#filmStrip").innerHTML=films.map(({title,meta,src,kind},i)=>`<button class="film-card rv" type="button" data-src="${asset(src)}" data-title="${title}" data-meta="${meta}"><img class="film-preview" src="${asset(filmPoster(src))}" alt="" loading="lazy" decoding="async"><span class="film-kicker">${kind} <i>${String(i+1).padStart(2,"0")}</i></span><span class="film-info"><span class="play" aria-hidden="true">&#9654;</span><strong>${title}</strong><span>${meta}</span></span></button>`).join("");
+$("#designGrid").innerHTML=designs.map(({title,meta,src,alt},i)=>`<article class="design-item rv"><a class="design-artwork" href="#design" data-gallery-index="${i}" aria-label="View artwork: ${title}"><img src="${asset(src)}" alt="${alt}" loading="lazy" decoding="async"></a><div class="design-caption"><h3>${title}</h3><p>${meta}</p><span>${String(i+1).padStart(2,"0")}</span></div></article>`).join("");
 
 /* draggable board */
 const area=$("#board-area");
-area.innerHTML=boardIds.map(n=>`<div class="card" tabindex="0"><img src="${img(n)}" alt="" loading="lazy" draggable="false"></div>`).join("");
+area.innerHTML=boardPhotos.map(({title,src})=>`<div class="card" tabindex="0"><img src="${asset(src)}" alt="${title}" decoding="async" fetchpriority="low" draggable="false"></div>`).join("");
 let z=1;
 function scatter(){const W=area.clientWidth,H=area.clientHeight;$$(".card",area).forEach((c,i)=>{const cw=c.offsetWidth,ch=c.offsetHeight;c.style.left=Math.max(0,(W-cw)*((i*.37+.08)%1))+"px";c.style.top=Math.max(0,(H-ch)*((i*.53+.1)%1))+"px";c.style.transform=`rotate(${(i%2?1:-1)*(3+i*2.3%9)}deg)`})}
 $$(".card",area).forEach(c=>{
@@ -30,21 +87,23 @@ scatter();let rw=innerWidth;addEventListener("resize",()=>{if(innerWidth!==rw){r
 
 /* hover preview + cursor */
 if(fine){
- const peek=$(".peek"),pi=$("img",peek),cur=$(".cursor");let mx=0,my=0,px=0,py=0;
- addEventListener("pointermove",e=>{mx=e.clientX;my=e.clientY;cur.classList.add("on");cur.style.transform=`translate(${mx-7}px,${my-7}px)`});
- (function loop(){px+=(mx-px)*.14;py+=(my-py)*.14;peek.style.left=px+"px";peek.style.top=py+"px";requestAnimationFrame(loop)})();
+ const peek=$(".peek"),pi=$("img",peek),cur=$(".cursor");
+ addEventListener("pointermove",e=>{const{x,y}=e;cur.classList.add("on");cur.style.transform=`translate(${x-7}px,${y-7}px)`;peek.style.left=x+"px";peek.style.top=y+"px"});
  $$(".index a").forEach(a=>{a.addEventListener("mouseenter",()=>{pi.src=a.dataset.img;peek.classList.add("on");peek.style.scale=1});a.addEventListener("mouseleave",()=>{peek.classList.remove("on");peek.style.scale=.6})});
  $$("a,button,.card").forEach(el=>{el.addEventListener("mouseenter",()=>cur.classList.add("hov"));el.addEventListener("mouseleave",()=>cur.classList.remove("hov"))});
 }
 
 /* lightbox */
 const lb=$("#lightbox"),lbImg=$("img",lb),lbT=$("strong",lb),lbM=$("figcaption span",lb),lbC=$("figcaption em",lb);
-let li=0,lastFocus=null;
-function showPhoto(i){li=(i+photos.length)%photos.length;const[t,m,n]=photos[li];lbImg.style.animation="none";lbImg.offsetWidth;lbImg.src=img(n);lbImg.alt=t;lbT.textContent=t;lbM.textContent=m;lbC.textContent=String(li+1).padStart(2,"0")+" / "+String(photos.length).padStart(2,"0");
- [1,-1].forEach(d=>{new Image().src=img(photos[(li+d+photos.length)%photos.length][2])})}
-function openPhoto(i){lastFocus=document.activeElement;showPhoto(i);lb.classList.add("open");lb.setAttribute("aria-hidden","false");document.body.classList.add("viewing");$(".lb-close",lb).focus()}
+let li=0,lastFocus=null,lightboxItems=photos;
+function showPhoto(i){li=(i+lightboxItems.length)%lightboxItems.length;const{title,meta,src}=lightboxItems[li];lbImg.style.animation="none";lbImg.offsetWidth;lbImg.src=asset(src);lbImg.alt=title;lbT.textContent=title;lbM.textContent=meta;lbC.textContent=String(li+1).padStart(2,"0")+" / "+String(lightboxItems.length).padStart(2,"0");
+ [1,-1].forEach(d=>{new Image().src=asset(lightboxItems[(li+d+lightboxItems.length)%lightboxItems.length].src)})}
+function openPhoto(i,items=photos){lastFocus=document.activeElement;lightboxItems=items;showPhoto(i);lb.classList.add("open");lb.setAttribute("aria-hidden","false");document.body.classList.add("viewing");$(".lb-close",lb).focus()}
+const photoSlides=photos.flatMap(photo=>photo.gallery||[photo]);
+function projectSlideIndex(projectIndex){return photos.slice(0,projectIndex).reduce((total,photo)=>total+(photo.gallery?.length||1),0)}
 function closePhoto(){if(!lb.classList.contains("open"))return;lb.classList.remove("open");lb.setAttribute("aria-hidden","true");document.body.classList.remove("viewing");lastFocus&&lastFocus.focus()}
-$$(".index a").forEach((a,i)=>a.addEventListener("click",e=>{e.preventDefault();$(".peek").classList.remove("on");openPhoto(i)}));
+$$ (".index a").forEach((a,i)=>a.addEventListener("click",e=>{e.preventDefault();$(".peek").classList.remove("on");openPhoto(projectSlideIndex(i),photoSlides)}));
+$$ (".design-artwork").forEach((a,i)=>a.addEventListener("click",e=>{e.preventDefault();openPhoto(i,designs)}));
 $(".lb-close",lb).addEventListener("click",closePhoto);
 $(".lb-nav.prev",lb).addEventListener("click",()=>showPhoto(li-1));
 $(".lb-nav.next",lb).addEventListener("click",()=>showPhoto(li+1));
@@ -62,7 +121,7 @@ function paint(){const p=vid.duration?vid.currentTime/vid.duration*100:0;fill.st
  if(vid.buffered.length)buf.style.width=(vid.buffered.end(vid.buffered.length-1)/vid.duration*100||0)+"%"}
 function openVideo(card){lastFocus=document.activeElement;$("#plTitle").textContent=card.dataset.title;$("#plMeta").textContent=card.dataset.meta||"";vid.src=card.dataset.src;vid.playbackRate=speeds[si];viewer.classList.add("open");viewer.setAttribute("aria-hidden","false");document.body.classList.add("viewing");vid.play().catch(()=>{});$(".viewer-close").focus()}
 function closeVideo(){if(!viewer.classList.contains("open"))return;if(document.fullscreenElement)document.exitFullscreen();vid.pause();vid.removeAttribute("src");vid.load();pl.classList.remove("playing");viewer.classList.remove("open");viewer.setAttribute("aria-hidden","true");document.body.classList.remove("viewing");paint();lastFocus&&lastFocus.focus()}
-$$(".film-card").forEach(c=>c.addEventListener("click",()=>openVideo(c)));
+$$ (".film-card").forEach(c=>c.addEventListener("click",()=>openVideo(c)));
 $(".viewer-close").addEventListener("click",closeVideo);
 viewer.addEventListener("click",e=>{if(e.target===viewer)closeVideo()});
 vid.addEventListener("click",toggle);$(".pl-big").addEventListener("click",toggle);$("#plPlay").addEventListener("click",toggle);
@@ -102,9 +161,10 @@ $$(".site-nav a").forEach(a=>a.addEventListener("click",()=>navTo(false)));
 
 /* reveal + hero parallax */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{rootMargin:"0px 0px -8% 0px"});
+document.documentElement.classList.add("motion-ready");
 $$(".rv").forEach(el=>io.observe(el));
 const hm=$(".hero-media img");let tick=false;
-addEventListener("scroll",()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{const y=scrollY;if(y<innerHeight*1.2)hm.style.transform=`translateY(${y*.12}px) scale(${1+y/4000})`;tick=false})},{passive:true});
+if(fine)addEventListener("scroll",()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{const y=scrollY;if(y<innerHeight*1.2)hm.style.transform=`translateY(${y*.12}px) scale(${1+y/4000})`;tick=false})},{passive:true});
 $$("img").forEach(i=>i.addEventListener("error",()=>console.error("Media failed:",i.currentSrc)));
 
 /* hero portrait: colour reveal grows from the pointer, only while it is over the person (silhouette hit-test) */
